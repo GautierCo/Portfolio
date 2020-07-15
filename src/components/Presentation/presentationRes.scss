@@ -1,0 +1,23 @@
+@media screen and (max-width: 640px) {
+
+    .title {
+        margin: 0 auto 1em auto;
+    }
+
+    .titlesplit {
+        width: 100%;
+    }
+
+    .title-border {
+        border-bottom: 4px solid #F3D34A; 
+        width: 0;
+        position: absolute;
+        left: 43%;
+        bottom: 1;
+    }
+
+    .photo {
+        margin: 1em auto;
+        width: 60%;
+    }
+}
