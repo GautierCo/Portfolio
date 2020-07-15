@@ -1,4 +1,5 @@
-import Logo from './img/clge.png'
+import Logo from '../components/Portfolio/img/clge.png'
+
 
 export default [
     {

@@ -1,0 +1,34 @@
+/* MODAL */
+
+.modal {
+    padding: 2em;
+    padding-top: 5em;
+    width: 100%;
+    height: 100vh;
+    background-color: #342f2f;
+    z-index: 18;
+}
+
+.project-technology {
+    background-color: #f3d34a;
+    padding: 0.5em;
+    margin: 0.5em 0;
+    color: black;
+    font-weight: 600;
+    max-width: 120px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.project-name {
+    font-size: 2.5em;
+    font-weight: 600;
+    text-align: center;
+}
+
+.project-description {
+    letter-spacing: .1rem;
+    font-size: 0.9m;
+    padding: 2em;
+    line-height: 1.5em;
+}

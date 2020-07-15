@@ -61,7 +61,7 @@ const Presentation = () => {
         // Step 1 : Photo
         tl.fromTo(photoRef, { y: -1280 }, {y: 0, opacity: 100, ease: Power3.easeInOut, duration: 1})
         tl.to(photoRef, { borderRadius: "50%", duration: 1.5, delay: 0.6 }, {y: 0})
-        tl.to(photoRef, { border: "5px solid #F5D3C8", duration: 0.7 })
+        tl.to(photoRef, { border: "5px solid #1a1a1e", duration: 0.7, ease: Power3.easeOut})
         // tl.to(photoRef, { y: 160 })
 
         // Step 2 : Titre
