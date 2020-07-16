@@ -7,23 +7,26 @@
     height: 100vh;
     background-color: #342f2f;
     z-index: 18;
-}
 
-.project-technology {
-    background-color: #f3d34a;
-    padding: 0.5em;
-    margin: 0.5em 0;
-    color: black;
-    font-weight: 600;
-    max-width: 120px;
-    text-align: center;
-    border-radius: 10px;
+    &-exit {
+        width: 50px;
+        opacity: 0;
+    }
 }
 
 .project-name {
-    font-size: 2.5em;
+    font-size: 3em;
     font-weight: 600;
     text-align: center;
+    opacity: 0;
+}
+
+.project-theme {
+    padding-top: 1em;
+    opacity: 0;
+    text-align: center;
+    font-style: italic;
+    color: #fff;
 }
 
 .project-description {
@@ -31,4 +34,53 @@
     font-size: 0.9m;
     padding: 2em;
     line-height: 1.5em;
+    opacity: 0;
 }
+
+.projects-technologies {
+    display: flex;
+    justify-content: center;
+}
+
+.project-technology {
+    background-color: #f3d34a;
+    padding: 0.5em;
+    margin: 0.5em 1em;
+    color: black;
+    font-weight: 600;
+    font-size: 0.9em;
+    max-width: 120px;
+    text-align: center;
+    border-radius:25px;
+}
+
+.project-logo {
+    padding-top: 2em;
+    opacity: 0;
+    max-width: 100%;
+    display: block;
+    margin: auto;
+}
+
+.project-url {
+    display: block;
+    background-color: #181818;
+    color: rgb(255, 255, 255);
+    max-width: 150px;
+    text-align: center;
+    margin: 2em auto;
+    padding: 1.5em;
+}
+
+.times-circle {
+    cursor: pointer;
+    color: #F3D34A;
+    transition-duration: 500ms;
+
+    &:hover {
+        color:#f3d34aba;
+        transform: rotate(90deg);
+        transition-duration: 500ms;
+    }
+}
+

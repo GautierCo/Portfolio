@@ -72,14 +72,19 @@
   display: block;
 }
 
-svg {
+.svg-test {
   overflow: visible;
   height: 100%;
   transform: translateZ(0);
 }
-path {
+.presentation > path {
   stroke-width: 1;
   stroke: white;
+  pointer-events:none;
+}
+
+.presentation > svg {
+  pointer-events:none;
 }
 
 .javascript-svg {

@@ -7,7 +7,16 @@ export default [
         name: "ClgeCrew", 
         description: "Notwithstanding that general features of the vital decisions can be regarded as deeply insignificant. The critical acclaim of the indicates the importance of the major and minor objectives. In any case, we can formally change the mechanism of the feedback system.", 
         theme: "eCommerce",
-        technology: "Wordpress",
+        technology: [
+            {
+                name: "Wordpress",
+                color: "#fff",
+            }, 
+            {
+                name: "Javascript",
+                color: "#fff",
+            },
+        ],
         url: "https://clgecrew.fr/",
         logo: Logo,
         urlGithub: null
@@ -17,7 +26,16 @@ export default [
         name: "DecoDelise", 
         description: "Notwithstanding that general features of the vital decisions can be regarded as deeply insignificant. The critical acclaim of the indicates the importance of the major and minor objectives. In any case, we can formally change the mechanism of the feedback system.", 
         theme: "eCommerce",
-        technology: "Wordpress",
+        technology: [
+            {
+                name: "Wordpress",
+                color: "#fff",
+            }, 
+            {
+                name: "Javascript",
+                color: "#fff",
+            },
+        ],
         url: "https://decodelise.com/",
         logo: Logo,
         urlGithub: null
@@ -27,8 +45,17 @@ export default [
         name: "cpSearch", 
         description: "Notwithstanding that general features of the vital decisions can be regarded as deeply insignificant. The critical acclaim of the indicates the importance of the major and minor objectives. In any case, we can formally change the mechanism of the feedback system.", 
         theme: "test",
-        technology: "NodeJS",
-        url: "http://dev.gautiercolasse.com/",
+        technology: ["NodeJS", "Javascript"],
+        technology: [
+            {
+                name: "Wordpress",
+                color: "#fff",
+            }, 
+            {
+                name: "Javascript",
+                color: "#fff",
+            },
+        ],
         logo: Logo,
         urlGithub: "https://github.com/GautierCo/dev.gautiercolasse.com"
     },
@@ -37,7 +64,16 @@ export default [
         name:"Nodejs", 
         description:"Notwithstanding that general features of the vital decisions can be regarded as deeply insignificant. The critical acclaim of the indicates the importance of the major and minor objectives. In any case, we can formally change the mechanism of the feedback system.", 
         theme:"eCommerce",
-        technology: "Wordpress",
+        technology: [
+            {
+                name: "Wordpress",
+                color: "#fff",
+            }, 
+            {
+                name: "Javascript",
+                color: "#fff",
+            },
+        ],
         url:"https://clgecrew.fr/",
         logo: Logo,
     },
@@ -46,7 +82,16 @@ export default [
         name:"MDN", 
         description:"Notwithstanding that general features of the vital decisions can be regarded as deeply insignificant. The critical acclaim of the indicates the importance of the major and minor objectives. In any case, we can formally change the mechanism of the feedback system.", 
         theme:"eCommerce",
-        technology: "Wordpress",
+        technology: [
+            {
+                name: "Wordpress",
+                color: "#fff",
+            }, 
+            {
+                name: "Javascript",
+                color: "#fff",
+            },
+        ],
         url:"https://decodelise.com/",
         logo: Logo,
     },
@@ -55,7 +100,16 @@ export default [
         name:"cpSearch", 
         description:"Notwithstanding that general features of the vital decisions can be regarded as deeply insignificant. The critical acclaim of the indicates the importance of the major and minor objectives. In any case, we can formally change the mechanism of the feedback system.", 
         theme:"eCommerce",
-        technology: "NodeJS",
+        technology: [
+            {
+                name: "Wordpress",
+                color: "#fff",
+            }, 
+            {
+                name: "Javascript",
+                color: "#fff",
+            },
+        ],
         url:"http://dev.gautiercolasse.com/",
         logo: Logo,
     },
@@ -64,7 +118,16 @@ export default [
         name:"cpSearch", 
         description:"Notwithstanding that general features of the vital decisions can be regarded as deeply insignificant. The critical acclaim of the indicates the importance of the major and minor objectives. In any case, we can formally change the mechanism of the feedback system.", 
         theme:"eCommerce",
-        technology: "Javascript",
+        technology: [
+            {
+                name: "Wordpress",
+                color: "#fff",
+            }, 
+            {
+                name: "Javascript",
+                color: "#fff",
+            },
+        ],
         url:"http://dev.gautiercolasse.com/",
         logo: Logo,
     },
@@ -73,7 +136,16 @@ export default [
         name:"cpSearch", 
         description:"Notwithstanding that general features of the vital decisions can be regarded as deeply insignificant. The critical acclaim of the indicates the importance of the major and minor objectives. In any case, we can formally change the mechanism of the feedback system.", 
         theme:"eCommerce",
-        technology: "Javascript",
+        technology: [
+            {
+                name: "Wordpress",
+                color: "#fff",
+            }, 
+            {
+                name: "Javascript",
+                color: "#fff",
+            },
+        ],
         url:"http://dev.gautiercolasse.com/",
         logo: Logo,
     }

@@ -29,8 +29,9 @@ const Menu = () => {
 
     useEffect(() => {
 
-        gsap.fromTo(header, { y: -100 }, { y: 0, delay: 2, visibility: "visible", ease: Power3.easeInOut, })
-    });
+        gsap.fromTo(header, { y: -100 }, { y: 0, delay: 3, visibility: "visible", ease: Power3.easeInOut, });
+
+    }, []);
 
     return (
 

@@ -1,26 +1,21 @@
 import React from 'react';
 
-import './App.css';
+/* Components */
 import Presentation from './components/Presentation';
 import Portfolio from './components/Portfolio'
 import Cv from './components/Cv';
 import Menu from './components/Menu';
+
+/* Data */
 import Data from './data/projects';
+
+/* Style */
+import './App.css';
 
 class App extends React.Component {
 
     state = {
         projectSelected: null, // ID
-        projects: {
-            id: 1,
-            name: "", 
-            description: "", 
-            theme: "",
-            technology: "",
-            url: "",
-            logo: null,
-            urlGithub: null
-        },
     };
 
     changeProjectSelected = (projectId) => {
@@ -37,7 +32,11 @@ class App extends React.Component {
                 <Menu />
                 <Presentation />
                 <Cv />
-                <Portfolio projects={Data} projectSelected={this.state.projectSelected} changeProjectSelected={this.changeProjectSelected}  />
+                <Portfolio 
+                    projects={Data} 
+                    projectSelected={this.state.projectSelected} 
+                    changeProjectSelected={this.changeProjectSelected}  
+                />
             </div>
         );
     };

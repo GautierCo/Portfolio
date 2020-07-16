@@ -1,9 +1,21 @@
+@media screen and (max-width: 1275px) {
+
+    .portfolio {
+        height: auto;
+        &-cards {
+            height: 100vh;
+            overflow-y: scroll;
+        }
+    }
+}
+
 @media screen and (max-width: 640px) {
 
     .portfolio {
         height: auto;
         &-cards {
             height: auto;
+            overflow-y: scroll;
         }
     }
 }
