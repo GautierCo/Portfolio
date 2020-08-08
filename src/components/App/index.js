@@ -1,17 +1,17 @@
 import React from 'react';
-import ScrollToTop from './components/ScrollToTop';
+import ScrollToTop from '../ScrollToTop';
 
 /* Components */
-import Presentation from './components/Presentation';
-import Portfolio from './components/Portfolio'
-import Cv from './components/Cv';
-import Menu from './components/Menu';
+import Presentation from '../Presentation';
+import Portfolio from '../Portfolio'
+import Cv from '../Cv';
+import Menu from '../Menu';
 
 /* Data */
-import Data from './data/projects';
+import Data from '../../data/projects';
 
 /* Style */
-import './App.css';
+import './app.css';
 
 
 class App extends React.Component {
