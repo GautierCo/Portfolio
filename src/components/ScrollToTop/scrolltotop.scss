@@ -1,0 +1,15 @@
+.rocket {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    font-size: 3em;
+    width: 50px;
+    transform: rotate(-45deg);
+    color: white;
+    cursor: pointer;
+    opacity: 0;
+
+    &:hover {
+        color: #f3d34a;
+    }
+  }

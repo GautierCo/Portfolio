@@ -7,6 +7,7 @@
     height: 100vh;
     background-color: #342f2f;
     z-index: 18;
+    border-left: 2px solid #f3d34a;
 
     &-exit {
         width: 50px;
@@ -37,11 +38,6 @@
     opacity: 0;
 }
 
-.projects-technologies {
-    display: flex;
-    justify-content: center;
-}
-
 .project-technology {
     background-color: #f3d34a;
     padding: 0.5em;
@@ -54,12 +50,31 @@
     border-radius:25px;
 }
 
-.project-logo {
-    padding-top: 2em;
+
+.project-image-block {
     opacity: 0;
+    
+}
+
+.project-image {
     max-width: 100%;
     display: block;
     margin: auto;
+    position: relative;
+}
+
+.project-technologies {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    top: 5px;
+    z-index: 25;
+}
+
+.project-btn {
+    display: flex;
+    justify-content: center;
 }
 
 .project-url {
@@ -68,9 +83,10 @@
     color: rgb(255, 255, 255);
     max-width: 150px;
     text-align: center;
-    margin: 2em auto;
+    margin: 2em 1em;
     padding: 1.5em;
 }
+
 
 .times-circle {
     cursor: pointer;

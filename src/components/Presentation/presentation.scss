@@ -1,5 +1,6 @@
 
 .presentation {
+  position: relative;
   max-width: 100%;
   height: 100vh;
   margin: auto;
@@ -62,15 +63,7 @@
   justify-content: space-around;
 }
 
-.github {
-  opacity: 0;
-  display: block;
-}
 
-.linkedin {
-  opacity: 0;
-  display: block;
-}
 
 .svg-test {
   overflow: visible;
@@ -87,19 +80,20 @@
   pointer-events:none;
 }
 
-.javascript-svg {
-
+.github {
+  opacity: 0;
+  display: block;
 }
 
-/*
-.shadow {
-  position: absolute;
-  bottom: 100%;
-  height: 300px;
-  width: 100%;
-  left: 0;
-  z-index: 20;
-  background: linear-gradient(to top, #05132c, transparent)
-
+.linkedin {
+  opacity: 0;
+  display: block;
 }
-*/
+
+.github-icon {
+  font-size: 2em;
+}
+
+.linkedin-icon {
+  font-size: 2em;
+}

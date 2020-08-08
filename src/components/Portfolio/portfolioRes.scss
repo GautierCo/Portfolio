@@ -1,9 +1,9 @@
-@media screen and (max-width: 1275px) {
+@media screen and (max-width: 1255px) {
 
     .portfolio {
         height: auto;
         &-cards {
-            height: 100vh;
+            height: auto;
             overflow-y: scroll;
         }
     }
@@ -12,10 +12,16 @@
 @media screen and (max-width: 640px) {
 
     .portfolio {
+        display: block;
+        position: relative;
         height: auto;
         &-cards {
             height: auto;
             overflow-y: scroll;
+        }
+
+        &-card {
+            min-width: 175px;
         }
     }
 }

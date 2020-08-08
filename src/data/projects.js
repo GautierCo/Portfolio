@@ -19,6 +19,7 @@ export default [
         ],
         url: "https://clgecrew.fr/",
         logo: Logo,
+        image: "https://fakeimg.pl/680x320/",
         urlGithub: null
     },
     { 
@@ -38,6 +39,7 @@ export default [
         ],
         url: "https://decodelise.com/",
         logo: Logo,
+        image: "https://fakeimg.pl/680x320/",
         urlGithub: null
     },
     { 
@@ -45,7 +47,6 @@ export default [
         name: "cpSearch", 
         description: "Notwithstanding that general features of the vital decisions can be regarded as deeply insignificant. The critical acclaim of the indicates the importance of the major and minor objectives. In any case, we can formally change the mechanism of the feedback system.", 
         theme: "test",
-        technology: ["NodeJS", "Javascript"],
         technology: [
             {
                 name: "Wordpress",
@@ -57,6 +58,7 @@ export default [
             },
         ],
         logo: Logo,
+        image: "https://fakeimg.pl/680x320/",
         urlGithub: "https://github.com/GautierCo/dev.gautiercolasse.com"
     },
     { 
@@ -76,6 +78,7 @@ export default [
         ],
         url:"https://clgecrew.fr/",
         logo: Logo,
+        image: "https://fakeimg.pl/680x320/",
     },
     { 
         id:5,
@@ -94,6 +97,7 @@ export default [
         ],
         url:"https://decodelise.com/",
         logo: Logo,
+        image: "https://fakeimg.pl/680x320/",
     },
     { 
         id:6,
@@ -112,6 +116,7 @@ export default [
         ],
         url:"http://dev.gautiercolasse.com/",
         logo: Logo,
+        image: "https://fakeimg.pl/680x320/",
     },
     { 
         id:7,
@@ -130,6 +135,7 @@ export default [
         ],
         url:"http://dev.gautiercolasse.com/",
         logo: Logo,
+        image: "https://fakeimg.pl/680x320/",
     },
     { 
         id:8,
@@ -148,5 +154,6 @@ export default [
         ],
         url:"http://dev.gautiercolasse.com/",
         logo: Logo,
+        image: "https://fakeimg.pl/680x320/",
     }
 ];
