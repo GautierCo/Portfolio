@@ -16,6 +16,7 @@
     width: 100%;
     margin: 1.5em auto 1em auto ;
     text-align: center;
+    opacity: 0;
     
     p {
         max-width: 800px;
@@ -29,6 +30,7 @@
     max-width: 1200px;
     display: flex;
     justify-content: space-around;
+    opacity: 0;
 }
 
 .experiences {
@@ -117,6 +119,7 @@
     justify-content: space-evenly;
     max-width: 1200px;
     margin: auto;
+    opacity: 0;
 }
 
 .competence-block {

@@ -1,9 +1,39 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './cv.scss';
 import './cvRes.scss';
-import { FaLinkedin, FaGithubSquare, FaReact, FaJs, FaHtml5, FaCss3, FaCss3Alt, FaNodeJs, FaCircle } from 'react-icons/fa';
+import { FaReact, FaJs, FaHtml5, FaCss3Alt, FaNodeJs } from 'react-icons/fa';
+import { gsap, Power3 } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const Cv = () => {
+
+    useEffect(() => {
+        gsap.registerPlugin(ScrollTrigger);
+
+        let tl = gsap.timeline({
+            scrollTrigger: {
+                trigger: ".cv",
+                toggleActions: "play play pause reverse"
+            },
+        })
+        tl.to('.cv-presentation', {             
+            delay: 0.5,
+            duration: 1,
+            opacity: 1,
+            ease: Power3.easeInOut,
+        });
+        tl.to('.cv-parcours', {             
+            duration: 0.5,
+            opacity: 1,
+            ease: Power3.easeInOut,
+        });
+        tl.to('.cv-competences', {             
+            duration: 0.5,
+            opacity: 1,
+            ease: Power3.easeInOut,
+        });
+
+    }, []);
 
     return (
         <section className="cv" id="cv">

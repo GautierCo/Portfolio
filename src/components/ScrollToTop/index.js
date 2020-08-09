@@ -1,9 +1,8 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { animateScroll as scroll } from 'react-scroll'
 import { FaRocket } from 'react-icons/fa';
 import { gsap, Power3 } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import './scrolltotop.scss';
 
@@ -20,10 +19,13 @@ const ScrollToTop = () => {
         gsap.registerPlugin(ScrollTrigger);
 
         gsap.fromTo('.rocket', { y: 100 }, {
-            scrollTrigger: ".cv",
+            scrollTrigger: {
+                trigger: ".portfolio",
+                toggleActions: "play complete reverse reverse"
+            },
             y: 0,
             duration: 1,
-            autoAlpha: 0.85,
+            autoAlpha: 1,
             ease: Power3.easeInOut,
           });
     }, []);
