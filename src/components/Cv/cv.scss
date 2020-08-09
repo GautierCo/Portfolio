@@ -1,15 +1,136 @@
 /* CV */
 
-.page-two {
+.cv {
     max-width: 100%;
     height: 100vh;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-direction: column;
+    padding: 1.5em;
     background-image: linear-gradient(to right bottom, #181818, #222122, #2d2b2c, #393536, #45403f, #45403f, #46403f, #46403f, #3c3637, #312c2e, #252326, #1a1a1e);
     color: #fff;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cv-presentation {
+    width: 100%;
+    margin: 1.5em auto 1em auto ;
+    text-align: center;
+    
+    p {
+        max-width: 800px;
+        margin: 1em auto;
+        line-height: 1.5em;
+    }
+}
+
+.cv-parcours {
+    margin: 1.5em auto 2.5em auto ;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.experiences {
+    width: 40%;
+
+    &-title {
+        text-align: center;
+        padding-bottom: 1em;
+        color: #F3D24A;
+    }
+}
+
+.experience {
+    margin: 2em 0;
+
+    &-name {
+        display: flex;
+        align-items: center;
+        font-size: 1.2em;
+        font-weight: 600;
+
+    }
+
+    &-date {
+        font-weight: 100;
+        font-size: .8em;
+        padding: 1em 0;
+    }
+
+    &-content {
+        line-height: 1.5em;
+
+        p {
+            padding: .3em 0;
+        }
+    }
+}
+
+.parcours-separation {
+    display: flex;
+    align-items: center;
+}
+
+.parcours-hr {
+    width: 20%;
+    height: 250px;
+    border: 2px solid #F3D24A;
+}
+
+.formations {
+    width: 40%;
+
+    &-title {
+        text-align: center;
+        padding-bottom: 1em;
+        color: #F3D24A;
+    }
+}
+
+.formation {
+
+    &-name {
+        display: flex;
+        align-items: center;
+        font-size: 1.2em;
+        font-weight: 600;
+    }
+
+    &-date {
+        font-weight: 100;
+        font-size: .8em;
+        padding: 1em 0;
+    }
+
+    &-content {
+        line-height: 1.5em;
+
+        p {
+            padding: .3em 0;
+        }
+    }
+}
+
+.cv-competences {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.competence-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+}
+
+.competence-icon {
+    font-size: 4em;
+}
+
+.competence-label {
+    padding-top: .5em;
 }

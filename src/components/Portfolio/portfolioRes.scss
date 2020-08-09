@@ -1,27 +1,14 @@
 @media screen and (max-width: 1255px) {
 
-    .portfolio {
-        height: auto;
-        &-cards {
-            height: auto;
-            overflow-y: scroll;
-        }
-    }
 }
 
 @media screen and (max-width: 640px) {
 
     .portfolio {
-        display: block;
-        position: relative;
-        height: auto;
-        &-cards {
-            height: auto;
-            overflow-y: scroll;
-        }
+        height: fit-content;
 
-        &-card {
-            min-width: 175px;
+        &-cards {
+            height: fit-content;
         }
     }
 }
