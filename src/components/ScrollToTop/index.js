@@ -21,7 +21,7 @@ const ScrollToTop = () => {
         gsap.fromTo('.rocket', { y: 100 }, {
             scrollTrigger: {
                 trigger: ".portfolio",
-                toggleActions: "play complete reverse reverse"
+                toggleActions: "play complete complete reverse"
             },
             y: 0,
             duration: 1,

@@ -6,6 +6,7 @@ import Presentation from '../Presentation';
 import Portfolio from '../Portfolio'
 import Cv from '../Cv';
 import Menu from '../Menu';
+import Contact from '../Contact';
 
 /* Data */
 import Data from '../../data/projects';
@@ -41,6 +42,7 @@ class App extends React.Component {
                 <Menu />
                 <Presentation />
                 <Cv />
+                
                 <Portfolio 
                     projects={Data} 
                     projectSelected={this.state.projectSelected} 
@@ -48,7 +50,10 @@ class App extends React.Component {
                     modalStatus={this.state.modalStatus}
                     changeModalStatus={this.changeModalStatus}
                 />
+                <Contact />
                 <ScrollToTop />
+                
+                {/**/}
             </div>
         );
     };

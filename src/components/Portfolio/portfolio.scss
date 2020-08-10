@@ -9,6 +9,7 @@
     margin: auto;
     display: flex;
     position: relative;
+    overflow-x: hidden;
 
     &-cards {
         max-width: 1000px;
@@ -29,7 +30,8 @@
         margin: 1em;
         position: relative;
         border-radius: 15px;
-        opacity: 1;
+        opacity: 0;
+        visibility: hidden;
         cursor: pointer;
         display: flex;
         justify-content: center;

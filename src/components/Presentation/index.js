@@ -69,7 +69,7 @@ const Presentation = () => {
 
             <Particles></Particles>
         
-            <h1 className="title" ref={ elem => title = elem }>Développeur Front-end Junior
+            <h1 className="title" ref={ elem => title = elem }>Développeur Front-end React
                 <span className="title-border" ref={ elem => titleBorder = elem }></span>
             </h1>
             <img src={ photo2 } alt="Photo colasse gautier" className="photo" ref={ elem => photoRef = elem } ></img>

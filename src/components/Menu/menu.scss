@@ -25,7 +25,7 @@
 }
 
 a {
-  color: white;
+  color: white!important;
   cursor: pointer;
 
   &:hover {
@@ -33,7 +33,7 @@ a {
   }
 }
 
-button {
+.menu-button > button {
   position: absolute;
   top: 50%;
   right: 10px;
