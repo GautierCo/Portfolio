@@ -1,11 +1,12 @@
 import Logo from '../components/Portfolio/img/clge.png'
 
+// https://gofile.io/uploadFiles -> Upload videos
 
 export default [
     {
         id: 1,
         name: "ClgeCrew", 
-        description: "Notwithstanding that general features of the vital decisions can be regarded as deeply insignificant. The critical acclaim of the indicates the importance of the major and minor objectives. In any case, we can formally change the mechanism of the feedback system.", 
+        description: "Création d'un site e-Commerce sous Wordpress (avant ma formation). Comme mon frère est Youtuber, il avait envie d'avoir son propre site pour vendre ses tenues personnalisées de moto-cross, ainsi que des vêtements. La boutique est actuellement fonctionnelle et en ligne.", 
         theme: "eCommerce",
         technology: [
             {
@@ -19,7 +20,7 @@ export default [
         ],
         url: "https://clgecrew.fr/",
         logo: Logo,
-        image: "https://fakeimg.pl/680x320/",
+        video: "https://srv-file12.gofile.io/download/IgEPax/clge.mp4",
         urlGithub: null
     },
     { 
@@ -39,7 +40,7 @@ export default [
         ],
         url: "https://decodelise.com/",
         logo: Logo,
-        image: "https://fakeimg.pl/680x320/",
+        video: "https://fakeimg.pl/680x320/",
         urlGithub: null
     },
     { 
@@ -58,7 +59,7 @@ export default [
             },
         ],
         logo: Logo,
-        image: "https://fakeimg.pl/680x320/",
+        video: "https://fakeimg.pl/680x320/",
         urlGithub: "https://github.com/GautierCo/dev.gautiercolasse.com"
     },
     { 
@@ -78,7 +79,7 @@ export default [
         ],
         url:"https://clgecrew.fr/",
         logo: Logo,
-        image: "https://fakeimg.pl/680x320/",
+        video: "https://fakeimg.pl/680x320/",
     },
     { 
         id:5,
@@ -97,7 +98,7 @@ export default [
         ],
         url:"https://decodelise.com/",
         logo: Logo,
-        image: "https://fakeimg.pl/680x320/",
+        video: "https://fakeimg.pl/680x320/",
     },
     { 
         id:6,
@@ -116,7 +117,7 @@ export default [
         ],
         url:"http://dev.gautiercolasse.com/",
         logo: Logo,
-        image: "https://fakeimg.pl/680x320/",
+        video: "https://fakeimg.pl/680x320/",
     },
 
 ];

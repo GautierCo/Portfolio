@@ -123,6 +123,7 @@ const Cv = () => {
                     <p className="competence-label">NodeJS</p>
                 </div>
             </div>
+
         </section>
     );
 };

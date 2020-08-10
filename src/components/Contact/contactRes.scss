@@ -1,0 +1,14 @@
+
+@media screen and (max-width: 640px) {
+
+    .contact {
+        &-form {
+            width: 100%;
+            margin: 1em;
+        }
+
+        &-form  .field {
+            padding: .5em 0;
+        }
+    }
+}

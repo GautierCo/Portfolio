@@ -56,11 +56,15 @@
     
 }
 
-.project-image {
+.project-video {
     max-width: 100%;
     display: block;
     margin: auto;
     position: relative;
+    
+    &:focus {
+        outline: none!important;
+    }
 }
 
 .project-technologies {
@@ -73,6 +77,7 @@
 }
 
 .project-btn {
+    padding-top: 1em;
     display: flex;
     justify-content: center;
 }
@@ -85,8 +90,13 @@
     text-align: center;
     margin: 2em 1em;
     padding: 1.5em;
-}
+    cursor: pointer;
 
+    &:hover {
+        background-color: #F3D24A;
+        color: #181818;
+    }
+}
 
 .times-circle {
     cursor: pointer;

@@ -6,12 +6,13 @@ import { gsap, Power3 } from "gsap";
 import { SplitText } from "gsap/SplitText";
 
 // Font-Awesome :
-import { FaLinkedin, FaGithubSquare } from 'react-icons/fa';
+import { FaLinkedin, FaGithubSquare, FaDownload } from 'react-icons/fa';
 
 // Assets :
 import photo2 from './img/02.jpg';
 import './presentation.scss';
 import './presentationRes.scss';
+import CV from './Gautier_Colasse_CV.pdf';
 
 // Components :
 import Particles from "../Particles/";
@@ -28,6 +29,7 @@ const Presentation = () => {
     let name = useRef(null);
     let githubRef = useRef(null);
     let linkedinRef = useRef(null);
+    let cvRef = useRef(null);
     let tl = gsap.timeline();
 
     useEffect(() => {
@@ -55,6 +57,8 @@ const Presentation = () => {
         // Github & Linkedin icons
         gsap.fromTo(githubRef, { x: -1000  }, { x: 0, autoAlpha: 1, duration: 1,  ease: Power3.easeOut, delay: 3.5 });
         gsap.fromTo(linkedinRef, { x: 1000  }, { x: 0, autoAlpha: 1, duration: 1,  ease: Power3.easeOut, delay: 3.5 });
+        gsap.to(cvRef, { x: 0, autoAlpha: 1, duration: 1,  ease: Power3.easeOut, delay: 3.5 });
+
 
     }, []);
    
@@ -78,10 +82,13 @@ const Presentation = () => {
 
             <div className="social-icons">
                 <a href="https://github.com/GautierCo" ref={ elem => githubRef = elem } onMouseEnter={() => animateIcon(githubRef)} target="_blank" rel="noopener noreferrer" className="github">
-                    <FaGithubSquare color="#F3D34A" className="github-icon"/>
+                    <FaGithubSquare color="#F3D34A" className="icon"/>
+                </a>
+                <a href={CV} target="_blank" rel="noopener noreferrer" ref={ elem => cvRef = elem } onMouseEnter={() => animateIcon(cvRef)}>
+                    <FaDownload color="#F3D34A" className="icon-s"/>
                 </a>
                 <a href="https://www.linkedin.com/in/gautier-colasse-828294130/" ref={ elem => linkedinRef = elem } onMouseEnter={() => animateIcon(linkedinRef)} target="_blank" rel="noopener noreferrer" className="linkedin">
-                    <FaLinkedin color="#F3D34A" className="linkedin-icon"/>
+                    <FaLinkedin color="#F3D34A" className="icon"/>
                 </a>
             </div>
         </section>

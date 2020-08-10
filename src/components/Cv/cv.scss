@@ -117,7 +117,7 @@
 .cv-competences {
     display: flex;
     justify-content: space-evenly;
-    max-width: 1200px;
+    width: 80%;
     margin: auto;
     opacity: 0;
 }
@@ -136,4 +136,8 @@
 
 .competence-label {
     padding-top: .5em;
+}
+
+.cv-download {
+    margin: auto;
 }

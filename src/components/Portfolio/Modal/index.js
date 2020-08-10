@@ -6,6 +6,8 @@ import './modalRes.scss';
 import { FaTimesCircle } from 'react-icons/fa';
 
 import { gsap, Power3 } from "gsap";
+import ReactPlayer from 'react-player/lazy'
+import { Button } from 'semantic-ui-react';
 
 const Modal = (props) => {
 
@@ -22,7 +24,7 @@ const Modal = (props) => {
     let description = useRef(null);
     let theme = useRef(null);
     let technology = useRef(null);
-    let logo = useRef(null);
+    let video = useRef(null);
 
     const exitModal = async () => {
         
@@ -41,7 +43,7 @@ const Modal = (props) => {
         tl.to(theme, { ease: Power3.easeInOut, autoAlpha: 1,  duration: 0.5 });
         tl.to(description, { ease: Power3.easeInOut, autoAlpha: 1,  duration: 0.5 });
         // tl.to(technology, { ease: Power3.easeInOut, autoAlpha: 1,  duration: 0.5 });
-        tl.to(logo, { ease: Power3.easeInOut, autoAlpha: 1,  duration: 0.5 });
+        tl.to(video, { ease: Power3.easeInOut, autoAlpha: 1,  duration: 0.5 });
         tl.to(exit, { ease: Power3.easeInOut, autoAlpha: 1, rotate: 360 });
  
     }, [] );
@@ -63,12 +65,18 @@ const Modal = (props) => {
                 </div>
             */}
 
-            <img className="project-image" src={ projectSelect.image } ref={elem => logo = elem} alt=""/>
+            <ReactPlayer 
+            url={ projectSelect.video }
+            controls={true} 
+            ref={elem => video = elem}
+            className="project-video"
+            />
             
             <div className="project-btn">
-            <a href={projectSelect.url}  className="project-url" target="_blank" rel="noopener noreferrer">Visiter</a>
-                { projectSelect.urlGithub ? 
-                    <a href={projectSelect.urlGithub}  className="project-url" target="_blank" rel="noopener noreferrer">Github</a> : <div></div> 
+                <Button href={projectSelect.url} target="_blank" rel="noopener noreferrer" content="Voir le site" color='green' icon="search" />
+            
+                { projectSelect.urlGithub &&
+                    <Button href={projectSelect.urlGithub}  target="_blank" rel="noopener noreferrer"  content="Code source" color='brown' icon="github" />
                 }
             </div>
         </div>

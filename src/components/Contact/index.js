@@ -2,6 +2,7 @@ import React from 'react';
 import emailjs from 'emailjs-com';
 import 'semantic-ui-css/semantic.min.css'
 import './contact.scss';
+import './contactRes.scss';
 import { Form, Button, Message } from 'semantic-ui-react';
 import { useState } from 'react';
 
@@ -10,11 +11,13 @@ const Contact = () => {
     const [ message, setMessage ] = useState('');
     const [ messageIsSuccess, setMessageIsSuccess ] = useState(false);
     const [ messageIsError, setMessageIsError ] = useState(false);
+    const [ messageLoading, setMessageLoading ] = useState(false);
 
-    const handdleSubmit = (e) => {
+    const handdleSubmit = async (e) => {
         e.preventDefault();
+        setMessageLoading(true);
 
-        emailjs.sendForm('gmail', 'portfolio', e.target, 'user_pLxu78uJ7NA6wgVMdS2pT')
+        await emailjs.sendForm('gmail', 'portfolio', e.target, 'user_pLxu78uJ7NA6wgVMdS2pT')
         .then((response) => {
             setMessageIsSuccess(true)
             setMessage('Votre message a bien été envoyé');
@@ -22,37 +25,46 @@ const Contact = () => {
         })
         .catch((error) => {
             setMessageIsError(true)
-            setMessage('Error');
+            setMessage('Erreur');
             console.log('FAILED...', error);
         });
+
+        setMessageLoading(false);
     };
 
     return (
-        <div className="contact">
+        <div className="contact" id="contact">
             <div className="contact-form">
-                <h3>Si vous souhaitez me contacter </h3>
+                <h3>Contactez moi :</h3>
                 <Form fluid onSubmit={handdleSubmit} error={messageIsError} success={messageIsSuccess}>
                     <Form.Group >
                         <Form.Input
                         type="text"
                         name="user_name"
                         placeholder="Nom"
-                        //value={"Nom prenom"}
+                        icon='user'
+                        iconPosition='left'
+                        disabled={messageLoading}
+                        required
                         />
                         <Form.Input
                         width={10}
                         type="email"
                         name="user_email"
                         placeholder="votremail@example.com"
-                        //value={"gezfgg@gmail.com"}
+                        icon='at'
+                        iconPosition='left'
+                        disabled={messageLoading}
+                        required
                         />
                     </Form.Group>
                         <Form.TextArea
                         type="text"
                         name="message"
                         placeholder="Écrivez votre message"
-                        //value={"kzren,gepior ner,gpienrpgierpgn erpgn r"}
-                        rows={10}
+                        rows={12}
+                        disabled={messageLoading}
+                        required
                         />
                         <Message
                         success
@@ -72,6 +84,8 @@ const Contact = () => {
                         type="submit"
                         content="Envoyer"
                         floated="right"
+                        color="green"
+                        loading={messageLoading}
                         />
                 </Form>
             </div>
