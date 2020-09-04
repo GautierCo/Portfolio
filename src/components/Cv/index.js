@@ -17,18 +17,17 @@ const Cv = () => {
             },
         })
         tl.to('.cv-presentation', {             
-            delay: 0.5,
             duration: 1,
             opacity: 1,
             ease: Power3.easeInOut,
         });
         tl.to('.cv-parcours', {             
-            duration: 0.5,
+            duration: 1,
             opacity: 1,
             ease: Power3.easeInOut,
         });
         tl.to('.cv-competences', {             
-            duration: 0.5,
+            duration: 1,
             opacity: 1,
             ease: Power3.easeInOut,
         });

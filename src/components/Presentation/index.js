@@ -84,7 +84,7 @@ const Presentation = () => {
                 <a href="https://github.com/GautierCo" ref={ elem => githubRef = elem } onMouseEnter={() => animateIcon(githubRef)} target="_blank" rel="noopener noreferrer" className="github">
                     <FaGithubSquare color="#F3D34A" className="icon"/>
                 </a>
-                <a href={CV} target="_blank" rel="noopener noreferrer" ref={ elem => cvRef = elem } onMouseEnter={() => animateIcon(cvRef)}>
+                <a href={CV} download target="_blank" rel="noopener noreferrer" ref={ elem => cvRef = elem } onMouseEnter={() => animateIcon(cvRef)}>
                     <FaDownload color="#F3D34A" className="icon-s"/>
                 </a>
                 <a href="https://www.linkedin.com/in/gautier-colasse-828294130/" ref={ elem => linkedinRef = elem } onMouseEnter={() => animateIcon(linkedinRef)} target="_blank" rel="noopener noreferrer" className="linkedin">
