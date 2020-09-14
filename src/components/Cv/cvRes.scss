@@ -1,5 +1,4 @@
 @media screen and (max-width: 640px) {
-
     .cv {
         height: fit-content;
 
@@ -17,15 +16,19 @@
         }
     }
 
-    .experiences {
+    .experiences_container {
         width: 100%;
+    }
+
+    .experiences {
+        height: 100%;
     }
 
     .parcours-separation {
         display: none;
     }
 
-    .formations {
+    .formations_container {
         width: 100%;
     }
 
