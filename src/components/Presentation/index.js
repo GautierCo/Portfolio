@@ -12,7 +12,6 @@ import { FaLinkedin, FaGithubSquare, FaDownload } from "react-icons/fa";
 import photo2 from "./img/02.jpg";
 import "./presentation.scss";
 import "./presentationRes.scss";
-import CV from "./Gautier_Colasse_CV.pdf";
 
 // Components :
 import Particles from "../Particles/";
