@@ -1,7 +1,3 @@
-import Logo from '../components/Portfolio/img/clge.png'
-
-// https://gofile.io/uploadFiles -> Upload videos
-
 export default [
     {
         id: 1,
@@ -19,14 +15,14 @@ export default [
             },
         ],
         url: "https://clgecrew.fr/",
-        logo: Logo,
-        video: "https://srv-file12.gofile.io/download/IgEPax/clge.mp4",
+        logo: process.env.PUBLIC_URL + '/logo_project/clgecrew.png',
+        image: process.env.PUBLIC_URL + '/img_project/clgecrew.jpeg',
         urlGithub: null
     },
     { 
         id: 2,
-        name: "DecoDelise", 
-        description: "Notwithstanding that general features of the vital decisions can be regarded as deeply insignificant. The critical acclaim of the indicates the importance of the major and minor objectives. In any case, we can formally change the mechanism of the feedback system.", 
+        name: "Déco d'Élise", 
+        description: "Création d'une boutique eCommerce avec Wordpress et le thème Divi complétement customisable.(avant ma formation)", 
         theme: "eCommerce",
         technology: [
             {
@@ -39,85 +35,35 @@ export default [
             },
         ],
         url: "https://decodelise.com/",
-        logo: Logo,
-        video: "https://fakeimg.pl/680x320/",
+        logo: process.env.PUBLIC_URL + '/logo_project/decodelise.png',
+        image: process.env.PUBLIC_URL + '/img_project/decodelise.jpeg',
         urlGithub: null
     },
     { 
         id: 3,
-        name: "cpSearch", 
-        description: "Notwithstanding that general features of the vital decisions can be regarded as deeply insignificant. The critical acclaim of the indicates the importance of the major and minor objectives. In any case, we can formally change the mechanism of the feedback system.", 
-        theme: "test",
-        technology: [
-            {
-                name: "Wordpress",
-                color: "#fff",
-            }, 
-            {
-                name: "Javascript",
-                color: "#fff",
-            },
-        ],
-        logo: Logo,
-        video: "https://fakeimg.pl/680x320/",
-        urlGithub: "https://github.com/GautierCo/dev.gautiercolasse.com"
-    },
-    { 
-        id:4,
-        name:"Nodejs", 
-        description:"Notwithstanding that general features of the vital decisions can be regarded as deeply insignificant. The critical acclaim of the indicates the importance of the major and minor objectives. In any case, we can formally change the mechanism of the feedback system.", 
-        theme:"eCommerce",
-        technology: [
-            {
-                name: "Wordpress",
-                color: "#fff",
-            }, 
-            {
-                name: "Javascript",
-                color: "#fff",
-            },
-        ],
-        url:"https://clgecrew.fr/",
-        logo: Logo,
-        video: "https://fakeimg.pl/680x320/",
-    },
-    { 
-        id:5,
-        name:"MDN", 
-        description:"Notwithstanding that general features of the vital decisions can be regarded as deeply insignificant. The critical acclaim of the indicates the importance of the major and minor objectives. In any case, we can formally change the mechanism of the feedback system.", 
-        theme:"eCommerce",
-        technology: [
-            {
-                name: "Wordpress",
-                color: "#fff",
-            }, 
-            {
-                name: "Javascript",
-                color: "#fff",
-            },
-        ],
-        url:"https://decodelise.com/",
-        logo: Logo,
-        video: "https://fakeimg.pl/680x320/",
-    },
-    { 
-        id:6,
-        name:"cpSearch", 
-        description:"Notwithstanding that general features of the vital decisions can be regarded as deeply insignificant. The critical acclaim of the indicates the importance of the major and minor objectives. In any case, we can formally change the mechanism of the feedback system.", 
-        theme:"eCommerce",
-        technology: [
-            {
-                name: "Wordpress",
-                color: "#fff",
-            }, 
-            {
-                name: "Javascript",
-                color: "#fff",
-            },
-        ],
-        url:"http://dev.gautiercolasse.com/",
-        logo: Logo,
-        video: "https://fakeimg.pl/680x320/",
-    },
+        name: "iTongue", 
+        description: `<p>Après 5 mois de formation intensive dans la fabuleuse <strong>Ecole O'clock</strong> pour apprendre le métier de développeur web, nous avons eu pour mission de créer un projet de A à Z pendant une durée de 1 mois en équipe de 5.</p>
 
+        <p>iTongue lève la barrière de la langue en permettant à tout un chacun de maîtriser les rudiments qui faciliteront ses échanges lors de ses voyages.</p>
+        
+        <p>La communauté des utilisateurs partage ses connaissances, on vient sur iTongue à la fois pour apprendre et transmettre son savoir grâce à des iRecords. Ce sont des enregistrements audio réalisés par la communauté qui permettent d'être écouté ou reproduit à travers l'application.</p>
+        
+        <p>J'ai été chargé de développer le front-end de l'application avec mon coéquipier Ludovic, nous avons utilisé le framework ReactJS couplé à Redux pour la gestion du store de l'application. On a eu l'occasion d'utiliser SocketIO avec lequel on a pu mettre en place un système de notifications et de chat en temps réel. Concernant l'UI nous avons préféré utiliser semantic UI comme base pour avoir plus de temps sur la partie fonctionnelle de l'application, mais nous avons tout de même fait beaucoup de css à la main avec Sass.</p>`, 
+        theme: "React, Redux, NodeJS, Express",
+        technology: [
+            {
+                name: "Wordpress",
+                color: "#fff",
+            }, 
+            {
+                name: "Javascript",
+                color: "#fff",
+            },
+        ],
+        logo: process.env.PUBLIC_URL + '/logo_project/itongue.png',
+        image: "https://fakeimg.pl/680x320/",
+        video: "gFhX1y1v8GQ",
+        url: "https://itongue.io",
+        urlGithub: "https://github.com/GautierCo/iTongue"
+    },
 ];

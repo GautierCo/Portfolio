@@ -8,6 +8,7 @@
     background-color: #342f2f;
     z-index: 100;
     border-left: 2px solid #f3d34a;
+    overflow: scroll;
 
     &-exit {
         width: 50px;
@@ -23,7 +24,7 @@
 }
 
 .project-theme {
-    padding-top: 1em;
+    padding-top: 2em;
     opacity: 0;
     text-align: center;
     font-style: italic;
@@ -31,11 +32,12 @@
 }
 
 .project-description {
-    letter-spacing: .1rem;
+    letter-spacing: 0.1rem;
     font-size: 0.9m;
-    padding: 2em;
     line-height: 1.5em;
     opacity: 0;
+    padding: 2em 0;
+    text-justify: inter-cluster;
 }
 
 .project-technology {
@@ -47,13 +49,11 @@
     font-size: 0.9em;
     max-width: 120px;
     text-align: center;
-    border-radius:25px;
+    border-radius: 25px;
 }
-
 
 .project-image-block {
     opacity: 0;
-    
 }
 
 .project-video {
@@ -61,9 +61,9 @@
     display: block;
     margin: auto;
     position: relative;
-    
+
     &:focus {
-        outline: none!important;
+        outline: none !important;
     }
 }
 
@@ -93,20 +93,37 @@
     cursor: pointer;
 
     &:hover {
-        background-color: #F3D24A;
+        background-color: #f3d24a;
         color: #181818;
     }
 }
 
 .times-circle {
     cursor: pointer;
-    color: #F3D34A;
+    color: #f3d34a;
     transition-duration: 500ms;
 
     &:hover {
-        color:#f3d34aba;
+        color: #f3d34aba;
         transform: rotate(90deg);
         transition-duration: 500ms;
     }
 }
 
+.project-imgContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.project-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+.project-video {
+    width: 560px;
+    height: 315px;
+    margin: auto;
+}

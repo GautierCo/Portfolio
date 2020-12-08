@@ -15,7 +15,11 @@ const Portfolio = (props) => {
 
     const { projects, projectSelected, changeProjectSelected, modalStatus, changeModalStatus } = props;
 
+    const reverseProjects = projects;
+
     useEffect(() => {
+
+        reverseProjects.reverse();
 
         gsap.registerPlugin(ScrollTrigger);
 
@@ -79,7 +83,7 @@ const Portfolio = (props) => {
 
             <div className="portfolio-cards">
 
-                { projects.map(project => (
+                { reverseProjects.map(project => (
                     <div className="portfolio-card" onClick={showProjectInModal(project.id)} onMouseEnter={cardStartEffect} onMouseLeave={cardStopEffect} key={project.id}>                                 
                          <img className="portfolio-logo" src={ project.logo } alt=""/>
                          <div className="portfolio-card-hover">

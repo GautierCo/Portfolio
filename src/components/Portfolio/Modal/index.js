@@ -8,6 +8,7 @@ import { FaTimesCircle } from 'react-icons/fa';
 import { gsap, Power3 } from "gsap";
 import ReactPlayer from 'react-player/lazy'
 import { Button } from 'semantic-ui-react';
+import parse from 'html-react-parser';
 
 const Modal = (props) => {
 
@@ -24,6 +25,7 @@ const Modal = (props) => {
     let description = useRef(null);
     let theme = useRef(null);
     let technology = useRef(null);
+    let image = useRef(null);
     let video = useRef(null);
 
     const exitModal = async () => {
@@ -43,7 +45,7 @@ const Modal = (props) => {
         tl.to(theme, { ease: Power3.easeInOut, autoAlpha: 1,  duration: 0.5 });
         tl.to(description, { ease: Power3.easeInOut, autoAlpha: 1,  duration: 0.5 });
         // tl.to(technology, { ease: Power3.easeInOut, autoAlpha: 1,  duration: 0.5 });
-        tl.to(video, { ease: Power3.easeInOut, autoAlpha: 1,  duration: 0.5 });
+        projectSelect.video ? tl.to(video, { ease: Power3.easeInOut, autoAlpha: 1,  duration: 0.5 }) : tl.to(image, { ease: Power3.easeInOut, autoAlpha: 1,  duration: 0.5 });
         tl.to(exit, { ease: Power3.easeInOut, autoAlpha: 1, rotate: 360 });
  
     }, [] );
@@ -55,7 +57,7 @@ const Modal = (props) => {
             </div>
             <h3 className="project-name" ref={elem => name = elem}>{ projectSelect.name }</h3>
             <p className="project-theme" ref={elem => theme = elem}>{ projectSelect.theme }</p>
-            <p className="project-description" ref={elem => description = elem}>{ projectSelect.description }</p>
+            <p className="project-description" ref={elem => description = elem}>{ parse(projectSelect.description) }</p>
             
             {/*
             <div className="project-technologies">
@@ -65,12 +67,18 @@ const Modal = (props) => {
                 </div>
             */}
 
-            <ReactPlayer 
-            url={ projectSelect.video }
-            controls={true} 
-            ref={elem => video = elem}
-            className="project-video"
-            />
+            {projectSelect.video ? 
+
+<div className="project-videoContainer">
+                <iframe className="project-video" ref={elem => video = elem} src={`https://www.youtube.com/embed/${projectSelect.video}?controls=1`} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+                </div>
+            :
+        
+            <div className="project-imgContainer">
+                <img src={projectSelect.image} ref={elem => image = elem} className="project-image"/>
+            </div>
+            }
+
             
             <div className="project-btn">
                 <Button href={projectSelect.url} target="_blank" rel="noopener noreferrer" content="Voir le site" color='green' icon="search" />

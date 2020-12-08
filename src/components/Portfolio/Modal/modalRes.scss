@@ -1,16 +1,20 @@
 @media screen and (max-width: 1255px) {
-
     .modal {
         height: auto;
     }
 }
 
 @media screen and (max-width: 640px) {
-
     .modal {
         position: absolute;
         top: 0;
         right: 0;
         height: 100%;
+    }
+
+    .video {
+        width: auto;
+        height: auto;
+        margin: auto;
     }
 }
