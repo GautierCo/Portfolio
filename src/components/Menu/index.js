@@ -43,7 +43,7 @@ const Menu = () => {
 
         <header className="menu" ref={elem => header = elem}>
             <div className="menu-logo">{"< />"}</div>
-            <div className="menu-modal" ref={elem => menuModalRef = elem} onMouseLeave={onToggle}>
+            <div className="menu-modal" ref={elem => menuModalRef = elem} >
                 <div className="menu-modal_links">
                 <Link activeClass="active" className="menu-modal_links__item" to="presentation"  spy={true} smooth={true} duration={500} >Présentation</Link>
                 <Link activeClass="active" className="menu-modal_links__item" to="cv"  spy={true} smooth={true} duration={500} >C.V</Link>

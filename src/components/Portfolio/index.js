@@ -15,11 +15,9 @@ const Portfolio = (props) => {
 
     const { projects, projectSelected, changeProjectSelected, modalStatus, changeModalStatus } = props;
 
-    const reverseProjects = projects;
+    const reverseProjects = [...projects].reverse();
 
-    useEffect(() => {
-
-        reverseProjects.reverse();
+    useEffect(() => {      
 
         gsap.registerPlugin(ScrollTrigger);
 

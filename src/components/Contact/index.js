@@ -36,7 +36,7 @@ const Contact = () => {
         <div className="contact" id="contact">
             <div className="contact-form">
                 <h3>Contactez moi :</h3>
-                <Form fluid onSubmit={handdleSubmit} error={messageIsError} success={messageIsSuccess}>
+                <Form  onSubmit={handdleSubmit} error={messageIsError} success={messageIsSuccess}>
                     <Form.Group >
                         <Form.Input
                         type="text"

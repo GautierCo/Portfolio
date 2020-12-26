@@ -61,9 +61,30 @@ export default [
             },
         ],
         logo: process.env.PUBLIC_URL + '/logo_project/itongue.png',
-        image: "https://fakeimg.pl/680x320/",
+        image: null,
         video: "gFhX1y1v8GQ",
         url: "https://itongue.io",
         urlGithub: "https://github.com/GautierCo/iTongue"
+    },
+    { 
+        id: 4,
+        name: "Qovery Engine", 
+        description: `<p>Benjamin Code a publié une vidéo concernant l'intégration d'une maquette qu'il devait réaliser pour son travail. Après avoir vu la vidéo j'ai décidé de faire un petit projet pour essayer à mon tour de réaliser cette maquette en essayant d'y intégrer quelques effets d'animations en plus.</p>`, 
+        theme: "Html, Scss, Javascript",
+        technology: [
+            {
+                name: "Wordpress",
+                color: "#fff",
+            }, 
+            {
+                name: "Javascript",
+                color: "#fff",
+            },
+        ],
+        logo: process.env.PUBLIC_URL + '/logo_project/qovery_logo.jpg',
+        image: process.env.PUBLIC_URL + '/img_project/qovery.gif',
+        video: null,
+        url: "https://qovery-engine-ten.vercel.app/",
+        urlGithub: "https://github.com/GautierCo/Qovery-Engine"
     },
 ];
