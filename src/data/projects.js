@@ -114,6 +114,6 @@ export default [
         image: process.env.PUBLIC_URL + "/img_project/tradelogger.gif",
         video: null,
         url: "https://trader-logger.vercel.app/signup",
-        urlGithub: "https://github.com/GautierCo/TraderLogger",
+        urlGithub: "https://github.com/GautierCo/TradeLogger",
     },
 ];
