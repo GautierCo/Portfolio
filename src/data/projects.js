@@ -93,7 +93,7 @@ export default [
         id: 5,
         name: "TradeLogger",
         description: `
-        <p>Pour passer mon <i>« Titre Professionnel Développeur Web & Mobile »</i> j'ai créé cette petite application du back jusqu'au front. A savoir <b>pourquoi elle n'est pas totalement terminée.</b></p>
+        <p>Pour passer mon <i>« Titre Professionnel Développeur Web & Mobile »</i> j'ai créé cette petite application du back jusqu'au front. A savoir : <b> elle n'est pas totalement terminée.</b></p>
         <p>TradeLogger est une application permettant aux traders de suivre quotidiennement toutes les actions d’achat ou de vente qu’ils exécutent.</p>
         <p>Bénéficier d’une synthèse avec des statistiques sur l’ensemble des trades, par exemple le pourcentage de trades gagnant. </p>
         <p>Pour être gagnant sur le long terme la psychologie est capitale, c’est pourquoi vous avez la possibilité de tenir votre propre journal de bord, ce qui vous permettra ensuite d’analyser votre état d’esprit en fonction des résultats obtenus.
