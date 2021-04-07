@@ -65,7 +65,7 @@ const Cv = () => {
                             <div className="experience-content">
                                 Création site : clgecrew.fr / decodelise.com (avant ma formation).
                                 <br />
-                                SEO / Wordpress / Affiliation / Boutique en ligne
+                                SEO / Wordpress / Affiliation / eCommerce
                             </div>
                         </div>
                         <div className="experience">
@@ -85,28 +85,37 @@ const Cv = () => {
                     <h3 className="formations-title">FORMATIONS</h3>
                     <div className="formations">
                         <div className="formation">
+                            <div className="formation-name">Certification Opquast</div>
+                            <div className="formation-date">Délivré en nov. 2020</div>
+                            <div className="formation-content">
+                                <p>Maîtrise de la qualité en projet Web</p>
+                                <a href="https://directory.opquast.com/fr/certificat/JMOGAV/">Voir la référence</a>
+                            </div>
+                        </div>
+                        <div className="formation">
                             <div className="formation-name">École O'Clock - Grande École du Numérique</div>
                             <div className="formation-date">MARS 2020 - SEPT 2020</div>
                             <div className="formation-content">
                                 <p>Formation intensive (700H) avec une méthodologie d'apprentissage bien développée.</p>
 
                                 <p>
-                                    <strong>Les fondamentaux :</strong> HTML/CSS, utilisation de Git, Javascript avec la
-                                    syntaxe ES6, POO
+                                    <strong>Les fondamentaux :</strong> HTML/CSS, utilisation de Git, Javascript coté
+                                    client avec la syntaxe ES6
                                 </p>
 
                                 <p>
-                                    <strong>Coté serveur :</strong> NodeJS Express PostGreSQL, création d'API REST,
-                                    structure MVC.
+                                    <strong>Serveur :</strong> NodeJS Express PostGreSQL, création d'API REST,
+                                    architecture MVC.
                                 </p>
 
                                 <p>
-                                    <strong>Spécialisation :</strong> React, Redux, les Hooks, les middlewares, Axios,
-                                    les WebScokets.
+                                    <strong>Spécialisation :</strong> React, Redux, Hooks, Middlewares, Axios,
+                                    WebScokets.
                                 </p>
                                 <p>
                                     <strong>Projet final :</strong> En équipe de cinq pendant 1 mois nous avons réalisé
-                                    un projet en situation réelle.
+                                    un projet en situation réelle. (
+                                    <a href="https://github.com/GautierCo/iTongue">iTongue</a>)
                                 </p>
                             </div>
                         </div>
