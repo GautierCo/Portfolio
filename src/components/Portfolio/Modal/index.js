@@ -89,20 +89,22 @@ const Modal = (props) => {
             )}
 
             <div className="project-btn">
-                <Button
-                    href={projectSelect.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    content="Voir le site"
-                    color="green"
-                    icon="search"
-                />
+                {projectSelect.url && (
+                    <Button
+                        href={projectSelect.url}
+                        target="_blank"
+                        rel="nofollow noopener noreferrer"
+                        content="Voir le site"
+                        color="green"
+                        icon="search"
+                    />
+                )}
 
                 {projectSelect.urlGithub && (
                     <Button
                         href={projectSelect.urlGithub}
                         target="_blank"
-                        rel="noopener noreferrer"
+                        rel="nofollow noopener noreferrer"
                         content="Code source"
                         color="brown"
                         icon="github"

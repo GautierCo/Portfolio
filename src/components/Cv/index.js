@@ -63,9 +63,9 @@ const Cv = () => {
                             <div className="experience-name">Auto-Entrepreneur</div>
                             <div className="experience-date">SEPT 2017 - AUJOURD'HUI</div>
                             <div className="experience-content">
-                                Création site : clgecrew.fr / decodelise.com (avant ma formation).
+                                Editeur de sites SEO / Wordpress / Affiliation / eCommerce
                                 <br />
-                                SEO / Wordpress / Affiliation / eCommerce
+                                Création site : clgecrew.fr / decodelise.com (avant ma formation).
                             </div>
                         </div>
                         <div className="experience">
@@ -85,11 +85,22 @@ const Cv = () => {
                     <h3 className="formations-title">FORMATIONS</h3>
                     <div className="formations">
                         <div className="formation">
+                            <div className="formation-name">Développeur Web et Web Mobile</div>
+                            <div className="formation-date">Délivré en avril. 2021</div>
+                            <div className="formation-content">
+                                <p>Titre professionnel de niveau 5 - Équivalant BAC+2</p>
+                            </div>
+                        </div>
+                        <div className="formation">
                             <div className="formation-name">Certification Opquast</div>
-                            <div className="formation-date">Délivré en nov. 2020</div>
+                            <div className="formation-date">
+                                Délivré en nov. 2020 -{" "}
+                                <a rel="nofollow" href="https://directory.opquast.com/fr/certificat/JMOGAV/">
+                                    Voir la référence
+                                </a>
+                            </div>
                             <div className="formation-content">
                                 <p>Maîtrise de la qualité en projet Web</p>
-                                <a href="https://directory.opquast.com/fr/certificat/JMOGAV/">Voir la référence</a>
                             </div>
                         </div>
                         <div className="formation">

@@ -116,4 +116,57 @@ export default [
         url: "https://trader-logger.vercel.app/signup",
         urlGithub: "https://github.com/GautierCo/TradeLogger",
     },
+    {
+        id: 6,
+        name: "Haunted House",
+        description: `<p>Étant très intéressé par les animations avec Javascript, j'ai cherché à en apprendre plus. Ce qui m'a permis de connaître <b>ThreeJS</b>.</p>
+        <p>J'ai donc acheté une formation sur ThreeJS créée par Bruno Simon (<a href="https://threejs-journey.xyz/" rel="nofollow"><b>ThreeJS Journey</b></a>). Pendant le parcours d'apprentissage qu'il propose, il nous fait faire un excercice qui est celui que je vais vous présenter.</p> 
+        <p>Le but était de réaliser une maison hantée avec des décors tels que des tombes, des fantômes qui se déplacent dans l'ombre</p>
+        <p>N'hésitez pas à visiter le site que j'ai hébergé sur Vercel pour avoir un meilleur aperçu</p>`,
+        theme: "ThreeJS, Javascript",
+        technology: [
+            {
+                name: "ThreeJS",
+                color: "#fff",
+            },
+            {
+                name: "Javascript",
+                color: "#fff",
+            },
+        ],
+        logo: process.env.PUBLIC_URL + "/logo_project/hauntedhouse_logo.jpg",
+        image: process.env.PUBLIC_URL + "/img_project/hauntedhouse.gif",
+        video: null,
+        url: "https://hauntedhouse.vercel.app/",
+        urlGithub: "",
+    },
+    {
+        id: 7,
+        name: "GroupBook",
+        description: `
+        <p>Au départ, mon idée était d'apprendre à créer une simple <b>extension chrome</b> permettant de récupérer les adresses emails ainsi que les différentes réponses des membres lorsqu'ils demandent d'intégrer un <b>groupe privé Facebok</b>.</p>
+        <p>Mais j'ai voulu en plus de l'extension pour pouvoir centraliser ces données grâce à un <b>Dashboard</b>, créé avec <b>ReactJS</b>.</p>    
+        <p>J'ai construit mon backend grâce aux cloud functions de <b>Firebase</b> et stocké les données sur le <b>Firestore</b></p>
+        <p>Conscient que <b>React</b> n'est pas très <b>SEO Friendly</b> j'ai aussi commencé un « site vitrine » avec <b>NextJS</b> pour présenter mon extension ainsi que le dashboard.</p>
+        <p>Le code sur Github est actuellement en privé, car je ne comptais pas le mettre en public donc je ferais une mise à jour prochainement pour supprimer les données sensibles.</p>
+        <p>Après avoir passé du temps à développer ce projet j'avais comme idée de créer mon premier SaaS, mais je me suis rendu compte qu'au niveau RGPD ce n'était pas faisable donc j'ai peu à peu abandonné ce projet</p>
+        <p>Il n'y a pas de version en production pour l'extension ni pour le dashboard</p>
+        `,
+        theme: "ReactJS, NodeJS, Firebase, Chrome Extension, NextJS",
+        technology: [
+            {
+                name: "ThreeJS",
+                color: "#fff",
+            },
+            {
+                name: "Javascript",
+                color: "#fff",
+            },
+        ],
+        logo: process.env.PUBLIC_URL + "/logo_project/groupbook_logo.jpg",
+        image: null,
+        video: "swYdCa4BALI",
+        url: null,
+        urlGithub: null,
+    },
 ];

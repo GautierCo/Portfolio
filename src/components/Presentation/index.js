@@ -80,7 +80,7 @@ const Presentation = () => {
                     ref={(elem) => (githubRef = elem)}
                     onMouseEnter={() => animateIcon(githubRef)}
                     target="_blank"
-                    rel="noopener noreferrer"
+                    rel="nofollow noopener noreferrer"
                     className="github"
                 >
                     <FaGithubSquare color="#F3D34A" className="icon" />
@@ -89,7 +89,7 @@ const Presentation = () => {
                     href={"/CV_GAUTIER_COLASSE.pdf"}
                     download
                     target="_blank"
-                    rel="noopener noreferrer"
+                    rel="nofollow noopener noreferrer"
                     ref={(elem) => (cvRef = elem)}
                     onMouseEnter={() => animateIcon(cvRef)}
                 >
@@ -100,7 +100,7 @@ const Presentation = () => {
                     ref={(elem) => (linkedinRef = elem)}
                     onMouseEnter={() => animateIcon(linkedinRef)}
                     target="_blank"
-                    rel="noopener noreferrer"
+                    rel="nofollow noopener noreferrer"
                     className="linkedin"
                 >
                     <FaLinkedin color="#F3D34A" className="icon" />
