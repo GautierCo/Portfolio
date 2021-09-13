@@ -2,13 +2,15 @@
 
 .modal {
     padding: 2em;
-    padding-top: 5em;
-    width: 100%;
+    //padding-top: 5em;
+    width: 0;
+    //min-width: 600px;
     height: 100vh;
     background-color: #342f2f;
     z-index: 100;
-    border-left: 2px solid #f3d34a;
-    overflow: scroll;
+    //border-left: 2px solid #f3d34a;
+    padding-bottom: 5em;
+    overflow-x: hidden;
 
     &-exit {
         width: 50px;

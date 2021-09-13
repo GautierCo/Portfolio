@@ -36,14 +36,13 @@ const Cv = () => {
         <section className="cv" id="cv">
             <div className="cv-presentation">
                 <p>
-                    Depuis tout petit j'ai toujours été passionné par l'informatique, étant de nature curieuse je me
-                    suis rapidement épanoui dans ce vaste monde qui me permet chaque jour de découvrir et d'apprendre de
-                    nouvelles choses.
+                    Passionné par l'informatique, étant de nature curieuse je me suis rapidement épanoui dans ce vaste
+                    monde qui me permet chaque jour de découvrir et d'apprendre de nouvelles choses.
                 </p>
                 <p>
                     Après un parcours assez atypique je me suis tourné vers O'clock, une école labellisée Grande École
-                    du numérique, où je suis actuellement une formation intense de 5 mois pour devenir Développeur Front
-                    End avec spécialisation React.{" "}
+                    du numérique, où j'ai suivi une formation intense pour devenir Développeur Front End avec
+                    spécialisation React.
                 </p>
             </div>
 

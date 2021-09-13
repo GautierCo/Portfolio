@@ -16,15 +16,13 @@ const Portfolio = (props) => {
 
     const reverseProjects = [...projects].reverse();
 
-    useEffect(() => {
-        gsap.registerPlugin(ScrollTrigger);
-
+    const showAllProjects = () => {
         gsap.fromTo(
             ".portfolio-card",
-            { x: 2000 },
+            { y: 30 },
             {
                 scrollTrigger: ".portfolio",
-                x: 0,
+                y: 0,
                 duration: 1,
                 autoAlpha: 0.85,
                 ease: Power3.easeInOut,
@@ -35,6 +33,11 @@ const Portfolio = (props) => {
                 },
             }
         );
+    };
+
+    useEffect(() => {
+        gsap.registerPlugin(ScrollTrigger);
+        showAllProjects();
     }, []);
 
     const cardStartEffect = (e) => {
@@ -51,14 +54,14 @@ const Portfolio = (props) => {
     const moveAllProjectsWithModal = () => {
         const tl = gsap.timeline();
 
-        tl.to(".portfolio-card", { autoAlpha: 0, delay: 0.2 });
+        tl.to(".portfolio-card", { autoAlpha: 0, delay: modalStatus ? 0.3 : 0 });
         tl.fromTo(
             ".portfolio-card",
-            { x: -2000 },
+            { x: 0 },
             {
                 x: 0,
-                duration: 1,
-                autoAlpha: 0.75,
+                duration: 1.5,
+                autoAlpha: 0.85,
                 ease: Power3.easeInOut,
                 stagger: {
                     each: 0.3,
@@ -104,6 +107,8 @@ const Portfolio = (props) => {
                     data={props.projects}
                     changeProjectSelected={props.changeProjectSelected}
                     changeModalStatus={changeModalStatus}
+                    moveAllProjectsWithModal={moveAllProjectsWithModal}
+                    showAllProjects={showAllProjects}
                 />
             )}
         </section>

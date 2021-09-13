@@ -6,10 +6,13 @@
 
 @media screen and (max-width: 640px) {
     .modal {
-        position: absolute;
+        position: fixed;
         top: 0;
         right: 0;
         height: 100%;
+        overflow: scroll;
+        min-width: 0;
+        padding-top: 5em;
     }
 
     .video {

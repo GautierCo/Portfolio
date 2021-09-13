@@ -13,7 +13,7 @@ import parse from "html-react-parser";
 const Modal = (props) => {
     /* Property */
 
-    const { projectId, changeModalStatus } = props;
+    const { projectId, changeModalStatus, moveAllProjectsWithModal, showAllProjects } = props;
     const projectSelect = props.data.find((project) => project.id === projectId);
 
     /* Ref : */
@@ -28,13 +28,33 @@ const Modal = (props) => {
     let video = useRef(null);
 
     const exitModal = async () => {
-        await gsap.fromTo(modal, { x: 0 }, { x: 1000, autoAlpha: 0, ease: Power3.easeOut, duration: 1 });
+        gsap.fromTo(modal, { autoAlpha: 1 }, { autoAlpha: 0, ease: Power3.easeOut, duration: 1 });
+
+        await gsap.fromTo(
+            ".portfolio-card",
+            { autoAlpha: 0.85 },
+            {
+                y: 0,
+                duration: 0.6,
+                autoAlpha: 0,
+                ease: Power3.easeInOut,
+                stagger: {
+                    each: 0.1,
+                },
+            }
+        );
+
+        await showAllProjects();
         props.changeProjectSelected(null);
         changeModalStatus(false);
     };
 
     useEffect(() => {
-        gsap.fromTo(modal, { x: 1000 }, { x: 0, autoAlpha: 1, duration: 1.5, delay: 0.2 });
+        gsap.fromTo(
+            modal,
+            { autoAlpha: 0.5, width: "0px" },
+            { autoAlpha: 1, width: "100%", duration: 1.5, delay: 0.3 }
+        );
 
         const tl = gsap.timeline();
 
@@ -59,9 +79,9 @@ const Modal = (props) => {
             <p className="project-theme" ref={(elem) => (theme = elem)}>
                 {projectSelect.theme}
             </p>
-            <p className="project-description" ref={(elem) => (description = elem)}>
+            <div className="project-description" ref={(elem) => (description = elem)}>
                 {parse(projectSelect.description)}
-            </p>
+            </div>
 
             {/*
             <div className="project-technologies">
@@ -77,9 +97,9 @@ const Modal = (props) => {
                         className="project-video"
                         ref={(elem) => (video = elem)}
                         src={`https://www.youtube.com/embed/${projectSelect.video}?controls=1`}
-                        frameborder="0"
+                        frameBorder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen
+                        allowFullScreen
                     ></iframe>
                 </div>
             ) : (
