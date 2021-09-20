@@ -88,7 +88,7 @@ const Modal = (props) => {
                 { projectSelect.technology.map(tech => (
                     <div className="project-technology" ref={elem => technology = elem}>#{tech.name}</div>
                 )) }
-                </div>
+            </div>
             */}
 
             {projectSelect.video ? (
