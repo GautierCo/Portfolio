@@ -1,4 +1,4 @@
-_J'ai commencé ce projet au début de mon apprentissage avec **React** donc le code n'est pas très propre, il y a surement beaucoup de choses à améliorer._
+_J'ai commencé ce projet au début de mon apprentissage avec **React** donc le code n'est pas très propre, il y a beaucoup de choses à améliorer._
 
 Lien direct : **[gautiercolasse.com](https://gautiercolasse.com/)**
 

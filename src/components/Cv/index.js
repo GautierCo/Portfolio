@@ -36,7 +36,7 @@ const Cv = () => {
         <section className="cv" id="cv">
             <div className="cv-presentation">
                 <p>
-                    Passionné par l'informatique, étant de nature curieuse je me suis rapidement épanoui dans ce vaste
+                    Passionné par l'informatique, étant de nature curieuse, je me suis rapidement épanoui dans ce vaste
                     monde qui me permet chaque jour de découvrir et d'apprendre de nouvelles choses.
                 </p>
                 <p>
@@ -87,7 +87,7 @@ const Cv = () => {
                             <div className="formation-name">Développeur Web et Web Mobile</div>
                             <div className="formation-date">Délivré en avril. 2021</div>
                             <div className="formation-content">
-                                <p>Titre professionnel de niveau 5 - Équivalant BAC+2</p>
+                                <p>Titre professionnel de niveau 5</p>
                             </div>
                         </div>
                         <div className="formation">
