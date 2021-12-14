@@ -168,4 +168,62 @@ export default [
         url: null,
         urlGithub: null,
     },
+    {
+        id: 8,
+        name: "QG2S",
+        description: `
+        <p>Site de la future entreprise QG2S, spécialisé en tant que marchands de biens. </p>
+         `,
+        theme: "Javascript, Parcel, GSAP, SCSS",
+        technology: [
+            {
+                name: "Javascript",
+                color: "#fff",
+            },
+            {
+                name: "SCSS",
+                color: "#fff",
+            },
+            {
+                name: "GSAP",
+                color: "#fff",
+            },
+        ],
+        logo: process.env.PUBLIC_URL + "/logo_project/qg2s.jpg",
+        image: process.env.PUBLIC_URL + "/img_project/qg2s.png",
+        video: null,
+        url: "https://qg2s.fr",
+        urlGithub: null,
+    },
+    {
+        id: 9,
+        name: "UNIKBYSW",
+        description: `
+        <p><b>Mission freelance :</b></p>
+        <p>Création d'un site avec NextJS, utilisation de Wordpress headless en tant qu'API avec
+        Gaphql.</p>
+        <p>Installation et customisation d'un plugin de personnalisation en temps réel de
+        différents produits, principalement en Javascript Vanilla.</p>
+         `,
+        theme: "Wordpress, GraphQL, NextJS, Javascript",
+        technology: [
+            {
+                name: "Javascript",
+                color: "#fff",
+            },
+            {
+                name: "SCSS",
+                color: "#fff",
+            },
+            {
+                name: "GSAP",
+                color: "#fff",
+            },
+        ],
+        logo: process.env.PUBLIC_URL + "/logo_project/unikbysw.jpg",
+        image: process.env.PUBLIC_URL + "/img_project/unikbysw.gif",
+        video: null,
+        url: "https://unikbysw.fr",
+        urlGithub: null,
+    },
 ];

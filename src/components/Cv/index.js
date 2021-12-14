@@ -51,6 +51,16 @@ const Cv = () => {
                     <h3 className="experiences-title">EXPÉRIENCES</h3>
                     <div className="experiences">
                         <div className="experience">
+                            <div className="experience-name">UNIKBYSW - Mission freelance</div>
+                            <div className="experience-date">NOV 2021 - DEC 2021</div>
+                            <div className="experience-content">
+                                Création d'un site avec NextJS, utilisation de Wordpress headless en tant qu'API avec
+                                Gaphql. <br />
+                                Installation et customisation d'un plugin de personnalisation en temps réel de
+                                différents produits, principalement en Javascript Vanilla.
+                            </div>
+                        </div>
+                        <div className="experience">
                             <div className="experience-name">Développeur Front-end (Projet)</div>
                             <div className="experience-date">AOUT 2020 - SEPT 2020</div>
                             <div className="experience-content">
