@@ -9,7 +9,7 @@ import { SplitText } from "gsap/SplitText";
 import { FaLinkedin, FaGithubSquare, FaDownload } from "react-icons/fa";
 
 // Assets :
-import photo2 from "./img/02.jpg";
+import photo2 from "./img/avatar.jpg";
 import "./presentation.scss";
 import "./presentationRes.scss";
 
