@@ -38,7 +38,7 @@ export default [
         ],
         url: "https://decodelise.com/",
         logo: process.env.PUBLIC_URL + "/logo_project/decodelise.png",
-        image: process.env.PUBLIC_URL + "/img_project/decodelise.jpeg",
+        image: process.env.PUBLIC_URL + "/img_project/decodelise.png",
         urlGithub: null,
     },
     {
